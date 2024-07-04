@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @layer base{
-    .navlink{
+    .underline-indicator{
         @apply border-0;
     }
-    .navlink:hover{
+    .underline-indicator:hover{
         @apply border-b-4 border-white border-opacity-25;
     }
-    .navlink.active{
+    .underline-indicator.active{
         @apply border-b-4 border-white border-opacity-100;
+    }
+    #primary-navigation ul li{
+        @apply md:h-20;;
     }
 }
